@@ -81,4 +81,6 @@ accuracy:79& -> RGB image를 augmentation 후에 Densenet과 Xceptionnet을 평�
 다른 방법론들 : EfficentNetB7, gray scale or green scale로 transform -> resize -> adaptiveThreshold -> Trheshold_OTSU -> Morphology, gaussian filter 이용
 reference : An Efficient Retinal Blood Vessel Segmentation using Morphological Operations Conference Paper (PDF Available) · October 2018 (ISMSIT)
 https://www.researchgate.net/publication/329565456_An_Efficient_Retinal_Blood_Vessel_Segmentation_using_Morphological_Operations
-알게된 방법론들 : label smoothing, input upsize, 초기에는 input을 augmentation과 함께 vggnet작은모델에 넣고, 이후에는 augmentation 제외 후 fine tuning 형태로 점아 모델 깊은 것 사용, gaussian filter가 좋지 않았다. vggnet or efficientnetB0 이용
+
+## 알게된 방법론들 
+label smoothing, input upsize, 초기에는 input을 augmentation과 함께 vggnet작은모델에 넣고, 이후에는 augmentation 제외 후 fine tuning 형태로 점아 모델 깊은 것 사용, gaussian filter가 좋지 않았다. vggnet or efficientnetB0 이용
